@@ -43,3 +43,13 @@ coverage/
 .cache/
 .parcel-cache/
 .eslintcache
+
+# Misc
+CLAUDE.md
+Dockerfile
+.dockerignore
+.editorconfig
+.prettierignore
+.prettierrc
+.stylelintrc.json
+.yarnrc.yml

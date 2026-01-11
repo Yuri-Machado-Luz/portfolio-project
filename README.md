@@ -1,35 +1,51 @@
-# Portfolio Projects
+# Portfolio Pessoal — Yuri Machado Luz
 
-Personal portfolio website built with React and modern web technologies.
+Site de portfolio pessoal desenvolvido com React e tecnologias web modernas.
 
-## Tech Stack
+**Nota importante:** Este é um projeto pessoal e não está disponível para uso, cópia ou distribuição. O código está público apenas para fins de demonstração de habilidades técnicas.
 
-- **Framework**: React 19 + Vite
-- **Styling**: Tailwind CSS 4
-- **Routing**: React Router 7
-- **Animations**: Motion (Framer Motion)
-- **UI Components**: Ant Design + Custom Design System
-- **Icons**: Lucide React
-- **Testing**: Vitest + React Testing Library
-- **Code Quality**: ESLint + Prettier + EditorConfig
+## Sobre o Desenvolvedor
 
-## Project Structure
+### Yuri Machado Luz (Yuma)
 
-```t
+- Desenvolvedor Full-Stack
+- Perfil híbrido: Tecnologia + Psicologia + Design
+- São Paulo, Brasil
+
+### Contato
+
+- LinkedIn: [linkedin.com/in/yurimachadoluz0311](https://linkedin.com/in/yurimachadoluz0311)
+- GitHub: [github.com/Yuri-Machado-Luz](https://github.com/Yuri-Machado-Luz)
+- Email: <yurimachadoluz@hotmail.com>
+
+## Stack Tecnológico
+
+- **Framework**: React 19 + Vite 7
+- **Estilização**: Tailwind CSS 4
+- **Roteamento**: React Router 7
+- **Animações**: Motion (Framer Motion)
+- **Componentes UI**: Ant Design + Sistema de Design Customizado
+- **Ícones**: Lucide React
+- **Testes**: Vitest + React Testing Library
+- **Qualidade de Código**: ESLint + Prettier + EditorConfig
+
+## Estrutura do Projeto
+
+```text
 src/
-├── assets/              # Static assets (images, icons)
+├── assets/              # Assets estáticos (imagens, ícones)
 │   ├── images/
 │   └── icons/
-├── components/          # Reusable UI components
-│   ├── ui/              # Atomic UI components (Button, Card, Badge, etc.)
-│   ├── layout/          # Layout primitives (Container, Section, Grid)
-│   ├── animation/       # Animation wrappers (FadeIn, AnimatedSection)
+├── components/          # Componentes reutilizáveis
+│   ├── ui/              # Componentes atômicos (Button, Card, Badge, etc.)
+│   ├── layout/          # Primitivas de layout (Container, Section, Grid)
+│   ├── animation/       # Wrappers de animação (FadeIn, AnimatedSection)
 │   └── index.js         # Barrel export
-├── constants/           # App-wide constants
-│   ├── animations.js    # Motion variants and presets
-│   ├── breakpoints.js   # Responsive breakpoints
-│   ├── routes.js        # Navigation routes
-│   ├── theme.js         # Design tokens (colors, fonts, shadows)
+├── constants/           # Constantes da aplicação
+│   ├── animations.js    # Variantes e presets do Motion
+│   ├── breakpoints.js   # Breakpoints responsivos
+│   ├── routes.js        # Rotas de navegação
+│   ├── theme.js         # Design tokens (cores, fontes, sombras)
 │   └── index.js
 ├── hooks/               # Custom React hooks
 │   ├── useClickOutside.js
@@ -38,86 +54,100 @@ src/
 │   ├── useMediaQuery.js
 │   ├── useScrollPosition.js
 │   └── index.js
-├── layout/              # Page sections/layouts
+├── layout/              # Seções da página
 │   ├── about/
 │   ├── contact/
 │   ├── hero/
 │   ├── navbar/
 │   ├── projects/
 │   └── index.js
-├── services/            # API services and external integrations
-├── styles/              # Global CSS styles
-│   ├── _components.css  # Component-specific styles
-│   ├── _styles.css      # Base styles and Tailwind theme
-│   └── index.css        # Main entry (imports)
-├── test/                # Test utilities and setup
-│   ├── setup.js         # Test environment config
-│   └── utils.js         # Testing helpers
-├── utils/               # Utility functions
-│   ├── cn.js            # Class name merger
-│   ├── date.js          # Date formatting
+├── services/            # Serviços de API e integrações externas
+├── styles/              # Estilos CSS globais
+│   ├── _components.css  # Estilos específicos de componentes
+│   ├── _styles.css      # Estilos base e tema do Tailwind
+│   └── index.css        # Entrada principal (imports)
+├── test/                # Utilitários e configuração de testes
+│   ├── setup.js         # Configuração do ambiente de testes
+│   └── utils.js         # Helpers de testes
+├── utils/               # Funções utilitárias
+│   ├── cn.js            # Mesclador de class names
+│   ├── date.js          # Formatação de datas
 │   ├── timing.js        # Debounce, throttle
-│   ├── validation.js    # Form validation
+│   ├── validation.js    # Validação de formulários
 │   └── index.js
-├── App.jsx              # Root component
-└── main.jsx             # Entry point
+├── App.jsx              # Componente raiz
+└── main.jsx             # Ponto de entrada
 ```
 
-## Scripts
+## Design System
+
+### Paleta de Cores
+
+- **Primária**: #ff0040 (vermelho/rosa)
+- **Secundária**: #00ffff (ciano)
+- **Neutros**: #f2f4f3 (branco), #1a1a1a (cinza), #0c090d (preto)
+
+### Tipografia
+
+- **Sans**: Josefin Sans
+- **Logo**: Changa
+- **Accent**: Tenor Sans
+
+## Scripts de Desenvolvimento
 
 ```bash
-# Development
-npm run dev          # Start development server
-npm run build        # Build for production
-npm run preview      # Preview production build
+# Desenvolvimento
+npm run dev          # Inicia servidor de desenvolvimento
+npm run build        # Build para produção
+npm run preview      # Preview do build de produção
 
-# Code Quality
-npm run lint         # Run ESLint
-npm run lint:fix     # Fix ESLint issues
-npm run format       # Format with Prettier
-npm run format:check # Check formatting
+# Qualidade de Código
+npm run lint         # Executa ESLint
+npm run lint:fix     # Corrige problemas do ESLint
+npm run format       # Formata com Prettier
+npm run format:check # Verifica formatação
 
-# Testing
-npm run test         # Run tests in watch mode
-npm run test:ui      # Open Vitest UI
-npm run test:run     # Run tests once
-npm run test:coverage # Run with coverage report
+# Testes
+npm run test         # Executa testes em modo watch
+npm run test:ui      # Abre UI do Vitest
+npm run test:run     # Executa testes uma vez
+npm run test:coverage # Executa com relatório de cobertura
 
-# All Checks
-npm run validate     # Run lint + format check + tests
+# Validação Completa
+npm run validate     # Executa lint + format check + testes
 ```
 
-## Getting Started
+## Configuração Local
 
-1. **Install dependencies:**
+1. **Instalar dependências:**
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
-1. **Start development server:**
+2. **Iniciar servidor de desenvolvimento:**
 
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
-1. **Open** [http://localhost:5173](http://localhost:5173)
+3. **Acessar** [http://localhost:5173](http://localhost:5173)
 
-## Import Aliases
+## Aliases de Importação
 
-The project uses path aliases for cleaner imports:
+O projeto utiliza aliases de caminho para imports mais limpos:
 
 ```javascript
-// Instead of:
+// Em vez de:
 import Button from "../../../components/ui/Button";
 
 // Use:
 import { Button } from "@components";
-// or
+// ou
 import { Button } from "@components/ui";
 ```
 
-Available aliases:
+Aliases disponíveis:
 
 - `@/*` → `src/*`
 - `@components/*` → `src/components/*`
@@ -129,18 +159,18 @@ Available aliases:
 - `@constants/*` → `src/constants/*`
 - `@assets/*` → `src/assets/*`
 
-## Component Guidelines
+## Padrão de Componentes
 
-### Atomic Design Pattern
+### Atomic Design
 
-Components are organized following atomic design principles:
+Os componentes seguem princípios de atomic design:
 
-- **UI (Atoms)**: Basic building blocks (Button, Badge, Icon, Spinner)
-- **Layout**: Structural components (Container, Section, Grid)
-- **Animation**: Motion wrappers (FadeIn, AnimatedSection)
-- **Feature**: Complex components combining atoms (Carousel, Navbar)
+- **UI (Atoms)**: Blocos básicos (Button, Badge, Icon, Spinner)
+- **Layout**: Componentes estruturais (Container, Section, Grid)
+- **Animation**: Wrappers de animação (FadeIn, AnimatedSection)
+- **Feature**: Componentes complexos combinando átomos (Carousel, Navbar)
 
-### Creating New Components
+### Exemplo de Componente
 
 ```jsx
 // src/components/ui/MyComponent.jsx
@@ -167,18 +197,18 @@ const MyComponent = ({
 export default MyComponent;
 ```
 
-## Testing
+## Testes
 
-Tests are located in `src/test/` and follow the pattern `*.test.{js,jsx}`.
+Testes estão localizados em `src/test/` e seguem o padrão `*.test.{js,jsx}`.
 
 ```bash
-# Run all tests
+# Executar todos os testes
 npm run test
 
-# Run with UI
+# Executar com UI
 npm run test:ui
 
-# Run with coverage
+# Executar com cobertura
 npm run test:coverage
 ```
 
@@ -186,25 +216,27 @@ npm run test:coverage
 
 ### v0.6.0
 
-- ✨ Complete architecture refactor with best practices
-- 📁 New folder structure with barrel exports
-- 🧱 Atomic Design component library (Button, Card, Badge, Icon, Spinner)
-- 🎣 Custom hooks (useDebounce, useLocalStorage, useMediaQuery, etc.)
-- 🛠️ Utility functions (cn, validation, date formatting, timing)
-- 📋 Centralized constants (animations, theme, routes, breakpoints)
-- 🧪 Testing setup with Vitest + React Testing Library
-- 🔧 Improved ESLint with a11y and React rules
-- 💅 EditorConfig + Prettier configuration
-- 🚀 GitHub Actions CI workflow
-- 📝 Path aliases for cleaner imports
+- Refatoração completa da arquitetura com melhores práticas
+- Nova estrutura de pastas com barrel exports
+- Biblioteca de componentes com Atomic Design (Button, Card, Badge, Icon, Spinner)
+- Custom hooks (useDebounce, useLocalStorage, useMediaQuery, etc.)
+- Funções utilitárias (cn, validation, formatação de datas, timing)
+- Constantes centralizadas (animações, tema, rotas, breakpoints)
+- Configuração de testes com Vitest + React Testing Library
+- ESLint melhorado com regras de a11y e React
+- Configuração de EditorConfig + Prettier
+- Workflow de CI com GitHub Actions
+- Aliases de caminho para imports mais limpos
 
-### v0.5.0-alpha
+### v1.0.0
 
-- Complete project overhaul
-- Migration to React + Vite
-- Added Tailwind CSS
-- Modern architecture implementation
+- Reformulação completa do projeto
+- Migração para React + Vite
+- Adição do Tailwind CSS
+- Implementação de arquitetura moderna
 
-## License
+---
 
-MIT
+**Última atualização:** Janeiro 2026
+
+Copyright © 2026 Yuri Machado Luz. Todos os direitos reservados.
