@@ -1,17 +1,35 @@
 import { NAV_ITEMS } from "@constants/routes";
-import { useScrollPosition } from "@hooks/useScrollPosition";
+import { useScrollPosition, useScrollSpy } from "@hooks";
 import { AnimatePresence, motion as Motion } from "framer-motion";
-import { useState } from "react";
 import { menuVariants } from "./const.env.js";
 import NavMenu from "./NavMenu.jsx";
 
 function Navbar() {
-  const [activeLink, setActiveLink] = useState(NAV_ITEMS[0].link);
   const { scrollY } = useScrollPosition();
   const isScrolled = scrollY > 50;
 
+  // Extrai os IDs das seções para monitorar
+  const sectionIds = NAV_ITEMS.map((item) => item.link.replace("#", ""));
+
+  // Hook que detecta automaticamente a seção ativa e atualiza a URL
+  const activeSectionId = useScrollSpy(sectionIds, 150);
+  const activeLink = activeSectionId ? `#${activeSectionId}` : NAV_ITEMS[0].link;
+
   const handleActiveLink = (link) => {
-    setActiveLink(link);
+    // Scroll suave para a seção
+    const targetId = link.replace("#", "");
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const offset = 100;
+      const elementPosition = targetElement.offsetTop;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
