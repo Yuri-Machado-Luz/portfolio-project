@@ -45,37 +45,38 @@ const Contact = () => {
             CONTATO<span className="text-sec">.</span>
           </h2>
           <p className="text-main-white/70 mb-12 max-w-2xl">
-            Desenvolvimento full-stack, automação de processos ou consultoria técnica. Entre em contato para discutir seu projeto.
+            Desenvolvimento full-stack, automação de processos ou consultoria
+            técnica. Entre em contato para discutir seu projeto.
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 lg:grid-cols-2">
           {/* Coluna de informações de contato */}
           <FadeIn delay={0.2} direction="left">
-            <Card variant="glass" className="p-8 h-full">
+            <Card variant="glass" className="h-full p-8">
               <Card.Body className="flex flex-col gap-6">
-                <h3 className="text-main-white text-xl font-semibold mb-2">
+                <h3 className="text-main-white mb-2 text-xl font-semibold">
                   Informações de Contato
                 </h3>
                 <p className="text-main-white/70 text-sm leading-relaxed">
-                  Disponível para projetos freelance, contrato CLT/PJ ou consultoria técnica. Resposta em até 24 horas.
+                  Disponível para projetos freelance, contrato CLT/PJ ou
+                  consultoria técnica. Resposta em até 24 horas.
                 </p>
 
-                <div className="flex flex-col gap-4 mt-4">
+                <div className="mt-4 flex flex-col gap-4">
                   {contactInfo.map((item, index) => (
                     <div key={index} className="flex items-center gap-4">
                       <div
-                        className="w-10 h-10 rounded-lg bg-main-gray/50 flex items-center
-                          justify-center border border-main-gray/30"
+                        className="bg-main-gray/50 border-main-gray/30 flex h-10
+                          w-10 items-center justify-center rounded-lg border"
                       >
-                        <Icon
-                          icon={item.icon}
-                          size="sm"
-                          className="text-sec"
-                        />
+                        <Icon icon={item.icon} size="sm" className="text-sec" />
                       </div>
                       <div className="flex flex-col">
-                        <span className="text-main-white/50 text-xs uppercase tracking-wide">
+                        <span
+                          className="text-main-white/50 text-xs tracking-wide
+                            uppercase"
+                        >
                           {item.label}
                         </span>
                         {item.href ? (
@@ -83,7 +84,8 @@ const Contact = () => {
                             href={item.href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-main-white hover:text-pri transition-colors text-sm"
+                            className="text-main-white hover:text-pri text-sm
+                              transition-colors"
                           >
                             {item.value}
                           </a>
@@ -102,10 +104,10 @@ const Contact = () => {
 
           {/* Coluna do formulário */}
           <FadeIn delay={0.3} direction="right">
-            <Card variant="glass" className="p-8 h-full">
+            <Card variant="glass" className="h-full p-8">
               <Card.Body>
                 <form className="flex flex-col gap-4">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                     <div>
                       <label
                         htmlFor="name"
@@ -118,7 +120,7 @@ const Contact = () => {
                         id="name"
                         className="bg-main-gray/50 border-main-gray/30
                           focus:border-pri w-full rounded-lg border px-4 py-3
-                          text-white transition-colors outline-none text-sm"
+                          text-sm text-white transition-colors outline-none"
                         placeholder="Seu nome"
                       />
                     </div>
@@ -134,7 +136,7 @@ const Contact = () => {
                         id="email"
                         className="bg-main-gray/50 border-main-gray/30
                           focus:border-pri w-full rounded-lg border px-4 py-3
-                          text-white transition-colors outline-none text-sm"
+                          text-sm text-white transition-colors outline-none"
                         placeholder="seu@email.com"
                       />
                     </div>
@@ -150,9 +152,9 @@ const Contact = () => {
                     <select
                       id="subject"
                       className="bg-main-gray/50 border-main-gray/30
-                        focus:border-pri w-full rounded-lg border px-4 py-3
-                        text-white transition-colors outline-none text-sm
-                        appearance-none cursor-pointer"
+                        focus:border-pri w-full cursor-pointer appearance-none
+                        rounded-lg border px-4 py-3 text-sm text-white
+                        transition-colors outline-none"
                       defaultValue=""
                     >
                       <option value="" disabled className="text-main-gray">
@@ -187,8 +189,9 @@ const Contact = () => {
                       id="message"
                       rows={5}
                       className="bg-main-gray/50 border-main-gray/30
-                        focus:border-pri w-full resize-none rounded-lg border px-4
-                        py-3 text-white transition-colors outline-none text-sm"
+                        focus:border-pri w-full resize-none rounded-lg border
+                        px-4 py-3 text-sm text-white transition-colors
+                        outline-none"
                       placeholder="Conte mais sobre seu projeto ou proposta..."
                     />
                   </div>
@@ -197,7 +200,7 @@ const Contact = () => {
                     Enviar Mensagem
                   </Button>
 
-                  <p className="text-main-white/40 text-xs text-center mt-2">
+                  <p className="text-main-white/40 mt-2 text-center text-xs">
                     Ou entre em contato diretamente pelo WhatsApp ou LinkedIn
                   </p>
                 </form>

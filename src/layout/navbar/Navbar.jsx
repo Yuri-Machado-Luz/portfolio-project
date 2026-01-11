@@ -18,8 +18,8 @@ function Navbar() {
     <>
       <Motion.nav
         className="fixed z-50 flex h-24 w-11/12 max-w-[1400px] items-center
-          justify-between rounded-full px-8 md:px-10 lg:px-14 align-middle
-          backdrop-blur-xl transition-all duration-300 border-[3px]"
+          justify-between rounded-full border-[3px] px-8 align-middle
+          backdrop-blur-xl transition-all duration-300 md:px-10 lg:px-14"
         style={{
           background: isScrolled
             ? "rgba(26, 26, 26, 0.98)"
@@ -38,18 +38,21 @@ function Navbar() {
         {/* Logo */}
         <Motion.h2
           aria-label="Logomarca"
-          className="text-main-white cursor-pointer text-2xl font-bold
-            tracking-wider xl:text-3xl relative"
+          className="text-main-white relative cursor-pointer text-2xl font-bold
+            tracking-wider xl:text-3xl"
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 400, damping: 30 }}
         >
           <a
             href="#hero"
             onClick={() => handleActiveLink("#hero")}
-            className="flex items-center gap-1 hover:text-pri transition-colors duration-300"
+            className="hover:text-pri flex items-center gap-1 transition-colors
+              duration-300"
           >
             YUMA
-            <span className="text-pri text-5xl/0 inline-block animate-pulse">.</span>
+            <span className="text-pri inline-block animate-pulse text-5xl/0">
+              .
+            </span>
           </a>
         </Motion.h2>
 

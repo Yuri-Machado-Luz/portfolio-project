@@ -102,7 +102,8 @@ function NavMenu({ activeLink, handleActiveLink }) {
               <a
                 href={item.link}
                 className={cn(
-                  "px-3 py-2 transition-colors duration-200 block relative text-sm font-medium tracking-wide",
+                  `relative block px-3 py-2 text-sm font-medium tracking-wide
+                  transition-colors duration-200`,
                   isActive
                     ? "text-pri"
                     : "text-main-white/80 hover:text-main-white"
@@ -114,7 +115,7 @@ function NavMenu({ activeLink, handleActiveLink }) {
                 {/* Indicador de link ativo */}
                 {isActive && (
                   <Motion.div
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-pri"
+                    className="bg-pri absolute right-0 -bottom-1 left-0 h-0.5"
                     layoutId="navIndicator"
                     transition={{
                       type: "spring",
