@@ -29,11 +29,7 @@ export const useScrollSpy = (sectionIds, offset = 100) => {
 
             // Atualiza o hash da URL sem scroll
             if (window.location.hash !== `#${sectionIds[i]}`) {
-              window.history.replaceState(
-                null,
-                "",
-                `#${sectionIds[i]}`,
-              );
+              window.history.replaceState(null, "", `#${sectionIds[i]}`);
             }
 
             break;
