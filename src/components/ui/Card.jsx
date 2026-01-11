@@ -25,6 +25,7 @@ const Card = forwardRef(
       default: "bg-main-gray/60 border border-main-gray/30",
       elevated: "bg-main-gray/80 shadow-lg shadow-black/30",
       outline: "border-2 border-pri/30 bg-transparent",
+      outlineBold: "border-2 border-pri/60 bg-transparent",
       glass: "bg-main-gray/30 backdrop-blur-md border border-white/10",
     };
 

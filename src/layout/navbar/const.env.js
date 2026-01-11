@@ -10,7 +10,7 @@ const menuVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { staggerChildren: 0.1, when: "beforeChildren" },
+    transition: { staggerChildren: 2, when: "beforeChildren" },
   },
   exit: {
     opacity: 0,
@@ -22,7 +22,7 @@ const menuVariants = {
 const itemVariants = {
   hidden: { opacity: 0, y: -6 },
   visible: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -6, transition: { delay: 0.1 } },
+  exit: { opacity: 0, y: -6, transition: { delay: 0.6 } },
 };
 
 export { itemVariants, menuVariants };

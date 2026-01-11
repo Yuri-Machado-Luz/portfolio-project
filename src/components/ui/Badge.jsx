@@ -28,6 +28,7 @@ const Badge = ({
     warning: "bg-yellow-500/20 text-yellow-400 border border-yellow-500/30",
     error: "bg-red-500/20 text-red-400 border border-red-500/30",
     outline: "bg-transparent text-main-white border border-main-white/30",
+    primaryOutline: "bg-pri/10 text-pri/80 border border-pri/30 ",
   };
 
   const sizes = {

@@ -82,7 +82,7 @@ const About = () => {
           >
             {/* Tab 0: Perfil */}
             {activeTab === 0 && (
-              <div className="mx-auto max-w-4xl">
+              <div className="mx-auto max-w-6xl">
                 <div className="space-y-8">
                   <div>
                     <h3 className="text-main-white mb-3 text-xl font-semibold">
@@ -142,9 +142,11 @@ const About = () => {
                           {category.skills.map((skill, skillIndex) => (
                             <Badge
                               key={skillIndex}
-                              variant="outline"
-                              size="sm"
-                              className={`${skill.primary ? "opacity-100" : "opacity-70"}`}
+                              variant={
+                                skill.primary ? "primaryOutline" : "outline"
+                              }
+                              size={skill.primary ? "lg" : "md"}
+                              className={`${skill.primary ? "opacity-100" : "opacity-60"}`}
                             >
                               {skill.name}
                             </Badge>

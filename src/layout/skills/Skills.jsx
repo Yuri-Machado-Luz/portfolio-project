@@ -52,8 +52,7 @@ const Skills = () => {
                       {category.skills.map((skill, skillIndex) => (
                         <Badge
                           key={skillIndex}
-                          variant="outline"
-                          size="sm"
+                          variant={skill.primary ? "primary" : "default"}
                           className={`${skill.primary ? "opacity-100" : "opacity-70"}`}
                         >
                           {skill.name}
@@ -84,7 +83,7 @@ const Skills = () => {
                 <Card variant="glass" hover className="p-6">
                   <div className="flex flex-col gap-4 md:flex-row">
                     {/* Período (lado esquerdo em desktop) */}
-                    <div className="flex-shrink-0 md:w-48">
+                    <div className="shrink-0 md:w-48">
                       <p className="text-sec text-sm font-semibold">
                         {exp.period}
                       </p>

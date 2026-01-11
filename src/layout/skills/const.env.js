@@ -20,10 +20,10 @@ export const SKILL_CATEGORIES = [
     skills: [
       { name: "React", level: "intermediário", primary: true },
       { name: "Node.js", level: "intermediário", primary: true },
-      { name: "Express", level: "intermediário", primary: false },
       { name: "Tailwind CSS", level: "avançado", primary: true },
-      { name: "Sass", level: "intermediário", primary: false },
       { name: "Framer Motion", level: "intermediário", primary: true },
+      { name: "Sass", level: "intermediário", primary: true },
+      { name: "Express", level: "intermediário", primary: false },
       { name: "Pandas", level: "intermediário", primary: false },
       { name: "Selenium", level: "intermediário", primary: false },
       { name: "Playwright", level: "básico", primary: false },
@@ -57,7 +57,7 @@ export const EXPERIENCES = [
   {
     role: "Desenvolvedor Full-Stack",
     company: "Freelancer",
-    period: "Jan 2020 – Atual",
+    period: "Jul 2022 – Atual",
     type: "Autônomo",
     description:
       "Criação de aplicações web completas, desde landing pages até sistemas SaaS em produção com 99.8% de uptime. Foco em automação de processos empresariais, integração de APIs, pipelines de dados e interfaces centradas no usuário. Clientes incluem clínicas, escritórios de advocacia e PMEs.",
@@ -67,6 +67,28 @@ export const EXPERIENCES = [
       "+50 automações entregues",
     ],
     technologies: ["React", "Node.js", "Python", "PostgreSQL", "APIs REST"],
+  },
+  {
+    role: "Designer & Redator",
+    company: "Freelancer",
+    period: "Jan 2020 – Atual",
+    type: "Autônomo",
+    description:
+      "Projetos de identidade visual, design UX/UI e redação técnica especializada. Atendimento a clínicas, empresas e projetos acadêmicos. Desenvolvimento de logos, materiais promocionais, wireframes e documentação técnica clara e objetiva.",
+    highlights: [
+      "Design de Identidade Visual e Branding",
+      "UX/UI Design e Prototipagem",
+      "Redação Técnica e Acadêmica (ABNT)",
+      "Materiais Institucionais e Marketing",
+    ],
+    technologies: [
+      "Figma",
+      "Adobe Suite",
+      "Illustrator",
+      "Photoshop",
+      "Canva",
+      "InDesign",
+    ],
   },
   {
     role: "Assistente Administrativo Pleno",

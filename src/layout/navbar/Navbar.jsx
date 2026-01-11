@@ -13,7 +13,9 @@ function Navbar() {
 
   // Hook que detecta automaticamente a seção ativa e atualiza a URL
   const activeSectionId = useScrollSpy(sectionIds, 150);
-  const activeLink = activeSectionId ? `#${activeSectionId}` : NAV_ITEMS[0].link;
+  const activeLink = activeSectionId
+    ? `#${activeSectionId}`
+    : NAV_ITEMS[0].link;
 
   const handleActiveLink = (link) => {
     // Scroll suave para a seção
@@ -35,15 +37,15 @@ function Navbar() {
   return (
     <>
       <Motion.nav
-        className="fixed z-50 flex h-24 w-11/12 max-w-[1400px] items-center
-          justify-between rounded-full border-[3px] px-8 align-middle
-          backdrop-blur-xl transition-all duration-300 md:px-10 lg:px-14"
+        className="fixed z-50 flex h-26 w-11/12 max-w-420 items-center
+          justify-between rounded-full border px-8 align-middle backdrop-blur-xl
+          transition-all duration-300 md:px-10 lg:px-14"
         style={{
           background: isScrolled
-            ? "rgba(26, 26, 26, 0.98)"
-            : "rgba(26, 26, 26, 0.85)",
+            ? "rgba(26, 26, 26, 0.48)"
+            : "rgba(26, 26, 26, 0.80)",
           borderColor: isScrolled
-            ? "rgba(255, 0, 64, 0.3)"
+            ? "rgba(255, 0, 64, 0.2)"
             : "rgba(140, 140, 140, 0.2)",
           boxShadow: isScrolled
             ? "0 8px 32px rgba(255, 0, 64, 0.2), 0 0 80px rgba(0, 255, 255, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1)"

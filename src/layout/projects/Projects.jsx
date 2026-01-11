@@ -8,7 +8,7 @@ const Projects = () => {
     {
       title: "Portfólio Pessoal",
       description:
-        "Este site. React + Vite + Tailwind CSS 4 + Framer Motion + Canvas API para animações. Otimizado para performance, sem bloat.",
+        "Este site. \n\nStack: React + Vite + Tailwind CSS 4 + Framer Motion + Canvas API para animações. Otimizado para performance, sem bloat.",
       technologies: [
         "React",
         "Vite",
@@ -34,8 +34,8 @@ const Projects = () => {
       description:
         "Plataforma de análise de dados com visualizações em tempo real, filtros avançados e integração multi-plataforma. Arquitetura React + Node.js com APIs REST, atingindo 95+ no Core Web Vitals e 99.8% uptime.",
       technologies: ["React", "Node.js", "Python", "PostgreSQL", "WebSocket"],
-      github: null,
-      demo: null,
+      github: "Em breve",
+      demo: "Em Desenvolvimento",
       type: "fullstack",
     },
     {
@@ -52,8 +52,8 @@ const Projects = () => {
       description:
         "Biblioteca de componentes React reutilizáveis com Atomic Design, acessibilidade WCAG 2.1, e documentação Storybook. Base para projetos frontend escaláveis e consistentes.",
       technologies: ["React", "Tailwind CSS", "Storybook", "Framer Motion"],
-      github: null,
-      demo: null,
+      github: "Em breve",
+      demo: "Em Desenvolvimento",
       type: "frontend",
     },
     {
@@ -126,7 +126,10 @@ const Projects = () => {
                 </Card.Header>
 
                 <Card.Body className="flex flex-1 flex-col gap-4">
-                  <p className="text-main-white/70 text-sm leading-relaxed">
+                  <p
+                    className="text-main-white/70 text-justify text-sm
+                      leading-relaxed whitespace-pre-wrap"
+                  >
                     {project.description}
                   </p>
 
@@ -141,18 +144,30 @@ const Projects = () => {
 
                 <Card.Footer className="flex gap-2">
                   {project.github ? (
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      as="a"
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      leftIcon={<Github size={16} />}
-                      className="flex-1"
-                    >
-                      Código-fonte
-                    </Button>
+                    project.github === "Em breve" ? (
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        disabled
+                        className="flex-1 cursor-not-allowed opacity-50"
+                        leftIcon={<Github size={16} />}
+                      >
+                        Em Breve
+                      </Button>
+                    ) : (
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        as="a"
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        leftIcon={<Github size={16} />}
+                        className="flex-1"
+                      >
+                        Código-fonte
+                      </Button>
+                    )
                   ) : (
                     <Button
                       variant="outline"
@@ -165,18 +180,33 @@ const Projects = () => {
                     </Button>
                   )}
                   {project.demo ? (
-                    <Button
-                      variant="primary"
-                      size="sm"
-                      as="a"
-                      href={project.demo}
-                      target={project.demo.startsWith("#") ? "_self" : "_blank"}
-                      rel="noopener noreferrer"
-                      rightIcon={<ExternalLink size={16} />}
-                      className="flex-1"
-                    >
-                      Ver Projeto
-                    </Button>
+                    project.demo === "Em Desenvolvimento" ? (
+                      <Button
+                        variant="primary"
+                        size="xs"
+                        disabled
+                        className="flex-1 cursor-not-allowed text-nowrap
+                          opacity-50"
+                        rightIcon={<ExternalLink size={16} />}
+                      >
+                        Em Desenvolvimento
+                      </Button>
+                    ) : (
+                      <Button
+                        variant="primary"
+                        size="sm"
+                        as="a"
+                        href={project.demo}
+                        target={
+                          project.demo.startsWith("#") ? "_self" : "_blank"
+                        }
+                        rel="noopener noreferrer"
+                        rightIcon={<ExternalLink size={16} />}
+                        className="flex-1"
+                      >
+                        Ver Projeto
+                      </Button>
+                    )
                   ) : (
                     <Button
                       variant="primary"
