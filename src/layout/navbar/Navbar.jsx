@@ -2,7 +2,7 @@ import { NAV_ITEMS } from "@constants/routes";
 import { useScrollPosition } from "@hooks/useScrollPosition";
 import { AnimatePresence, motion as Motion } from "framer-motion";
 import { useState } from "react";
-import { itemVariants, menuVariants } from "./const.env.js";
+import { menuVariants } from "./const.env.js";
 import NavMenu from "./NavMenu.jsx";
 
 function Navbar() {

@@ -5,14 +5,15 @@ import { Briefcase, GraduationCap } from "lucide-react";
 import { EDUCATION, EXPERIENCES, SKILL_CATEGORIES } from "./const.env.js";
 
 const Skills = () => {
-  const getLevelColor = (level) => {
-    const colors = {
-      avançado: "bg-pri/20 text-pri border-pri/30",
-      intermediário: "bg-sec/20 text-sec border-sec/30",
-      básico: "bg-main-gray/40 text-main-white/70 border-main-gray/30",
-    };
-    return colors[level] || colors.básico;
-  };
+  // Function reserved for future use
+  // const getLevelColor = (level) => {
+  //   const colors = {
+  //     avançado: "bg-pri/20 text-pri border-pri/30",
+  //     intermediário: "bg-sec/20 text-sec border-sec/30",
+  //     básico: "bg-main-gray/40 text-main-white/70 border-main-gray/30",
+  //   };
+  //   return colors[level] || colors.básico;
+  // };
 
   return (
     <Section id="skills">
