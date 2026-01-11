@@ -10,12 +10,12 @@ const menuVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { staggerChildren: 0.1, when: "beforeChildren" },
+    transition: { staggerChildren: 0.1, when: "beforeChildren", duration: 0.2 },
   },
   exit: {
     opacity: 0,
     y: -10,
-    transition: { when: "afterChildren" },
+    transition: { when: "afterChildren", duration: 0.2 },
   },
 };
 

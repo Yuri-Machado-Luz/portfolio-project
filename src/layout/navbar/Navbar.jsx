@@ -39,17 +39,17 @@ function Navbar() {
       <Motion.nav
         className="fixed z-50 flex h-26 w-11/12 max-w-420 items-center
           justify-between rounded-full border px-8 align-middle backdrop-blur-xl
-          transition-all duration-300 md:px-10 lg:px-14"
+          transition-all duration-600 md:px-10 lg:px-14"
         style={{
           background: isScrolled
-            ? "rgba(26, 26, 26, 0.48)"
-            : "rgba(26, 26, 26, 0.80)",
+            ? "rgba(26, 26, 26, 0.20)"
+            : "rgba(26, 26, 26, 0.40)",
           borderColor: isScrolled
-            ? "rgba(255, 0, 64, 0.2)"
-            : "rgba(140, 140, 140, 0.2)",
+            ? "rgba(255, 0, 64, 0.05)"
+            : "rgba(140, 140, 140, 0.05)",
           boxShadow: isScrolled
-            ? "0 8px 32px rgba(255, 0, 64, 0.2), 0 0 80px rgba(0, 255, 255, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1)"
-            : "0 4px 16px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05)",
+            ? "0 4px 8px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.05)"
+            : "0 8px 32px rgba(255, 0, 64, 0.1), 0 2px 10px rgba(0, 255, 255, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
         }}
         initial="hidden"
         animate="visible"
