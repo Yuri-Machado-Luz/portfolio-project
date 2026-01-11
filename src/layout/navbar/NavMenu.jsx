@@ -59,16 +59,16 @@ function NavMenu({ activeLink, handleActiveLink }) {
               animate="visible"
               exit="exit"
               variants={menuVariants}
-              className="bg-main-gray/95 absolute top-24 -right-2 z-50 w-5/12
-                -translate-x-1/12 transform rounded-3xl px-6 py-3 shadow-lg
-                shadow-black/50 xl:hidden xl:w-3/12"
+              className="bg-main-gray/98 absolute top-28 right-0 z-50 w-full
+                transform rounded-3xl px-6 py-3 shadow-lg shadow-black/50
+                backdrop-blur-3xl xl:hidden xl:w-3/12"
               role="menu"
             >
               {NAV_ITEMS.map((item) => (
                 <Motion.li
                   key={item.name}
                   variants={itemVariants}
-                  whileHover={{ scale: 1.05, translateY: -2 }}
+                  whileHover={{ scale: 1.02, translateY: -2 }}
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: "spring", stiffness: 300, damping: 40 }}
                   className="mb-2 flex h-16 w-full justify-center rounded-2xl
