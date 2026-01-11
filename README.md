@@ -1,123 +1,123 @@
-# Portfólio - Yuri Machado Luz
+# Portfolio Projects
 
-Portfólio pessoal desenvolvido com React e tecnologias web modernas.
+Personal portfolio website built with React and modern web technologies.
 
-## Stack Tecnológica
+## Tech Stack
 
 - **Framework**: React 19 + Vite
-- **Estilização**: Tailwind CSS 4
-- **Roteamento**: React Router 7
-- **Animações**: Motion (Framer Motion)
-- **Componentes UI**: Ant Design + Sistema de Design Customizado
-- **Ícones**: Lucide React
-- **Testes**: Vitest + React Testing Library
-- **Qualidade de Código**: ESLint + Prettier + EditorConfig
+- **Styling**: Tailwind CSS 4
+- **Routing**: React Router 7
+- **Animations**: Motion (Framer Motion)
+- **UI Components**: Ant Design + Custom Design System
+- **Icons**: Lucide React
+- **Testing**: Vitest + React Testing Library
+- **Code Quality**: ESLint + Prettier + EditorConfig
 
-## Estrutura do Projeto
+## Project Structure
 
-```plaintext
+```t
 src/
-├── assets/              # Assets estáticos (imagens, ícones)
+├── assets/              # Static assets (images, icons)
 │   ├── images/
 │   └── icons/
-├── components/          # Componentes UI reutilizáveis
-│   ├── ui/              # Componentes atômicos (Button, Card, Badge, etc.)
-│   ├── layout/          # Componentes de layout (Container, Section, Grid)
-│   ├── animation/       # Wrappers de animação (FadeIn, AnimatedSection)
-│   └── index.js         # Exportações centralizadas
-├── constants/           # Constantes globais da aplicação
-│   ├── animations.js    # Variantes e presets do Motion
-│   ├── breakpoints.js   # Breakpoints responsivos
-│   ├── routes.js        # Rotas de navegação
-│   ├── theme.js         # Tokens de design (cores, fontes, sombras)
+├── components/          # Reusable UI components
+│   ├── ui/              # Atomic UI components (Button, Card, Badge, etc.)
+│   ├── layout/          # Layout primitives (Container, Section, Grid)
+│   ├── animation/       # Animation wrappers (FadeIn, AnimatedSection)
+│   └── index.js         # Barrel export
+├── constants/           # App-wide constants
+│   ├── animations.js    # Motion variants and presets
+│   ├── breakpoints.js   # Responsive breakpoints
+│   ├── routes.js        # Navigation routes
+│   ├── theme.js         # Design tokens (colors, fonts, shadows)
 │   └── index.js
-├── hooks/               # Hooks customizados do React
+├── hooks/               # Custom React hooks
 │   ├── useClickOutside.js
 │   ├── useDebounce.js
 │   ├── useLocalStorage.js
 │   ├── useMediaQuery.js
 │   ├── useScrollPosition.js
 │   └── index.js
-├── layout/              # Seções e layouts das páginas
+├── layout/              # Page sections/layouts
 │   ├── about/
 │   ├── contact/
 │   ├── hero/
 │   ├── navbar/
 │   ├── projects/
 │   └── index.js
-├── services/            # Serviços de API e integrações externas
-├── styles/              # Estilos CSS globais
-│   ├── _components.css  # Estilos específicos de componentes
-│   ├── _styles.css      # Estilos base e tema Tailwind
-│   └── index.css        # Ponto de entrada principal (imports)
-├── test/                # Utilitários e configuração de testes
-│   ├── setup.js         # Configuração do ambiente de testes
-│   └── utils.js         # Helpers de testes
-├── utils/               # Funções utilitárias
-│   ├── cn.js            # Concatenador de classes
-│   ├── date.js          # Formatação de datas
+├── services/            # API services and external integrations
+├── styles/              # Global CSS styles
+│   ├── _components.css  # Component-specific styles
+│   ├── _styles.css      # Base styles and Tailwind theme
+│   └── index.css        # Main entry (imports)
+├── test/                # Test utilities and setup
+│   ├── setup.js         # Test environment config
+│   └── utils.js         # Testing helpers
+├── utils/               # Utility functions
+│   ├── cn.js            # Class name merger
+│   ├── date.js          # Date formatting
 │   ├── timing.js        # Debounce, throttle
-│   ├── validation.js    # Validação de formulários
+│   ├── validation.js    # Form validation
 │   └── index.js
-├── App.jsx              # Componente raiz
-└── main.jsx             # Ponto de entrada
+├── App.jsx              # Root component
+└── main.jsx             # Entry point
 ```
 
-## Scripts Disponíveis
+## Scripts
 
 ```bash
-# Desenvolvimento
-npm run dev          # Inicia servidor de desenvolvimento
-npm run build        # Build para produção
-npm run preview      # Preview do build de produção
+# Development
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
 
-# Qualidade de Código
-npm run lint         # Executa ESLint
-npm run lint:fix     # Corrige problemas do ESLint
-npm run format       # Formata código com Prettier
-npm run format:check # Verifica formatação
+# Code Quality
+npm run lint         # Run ESLint
+npm run lint:fix     # Fix ESLint issues
+npm run format       # Format with Prettier
+npm run format:check # Check formatting
 
-# Testes
-npm run test         # Executa testes em modo watch
-npm run test:ui      # Abre interface do Vitest
-npm run test:run     # Executa testes uma vez
-npm run test:coverage # Executa com relatório de cobertura
+# Testing
+npm run test         # Run tests in watch mode
+npm run test:ui      # Open Vitest UI
+npm run test:run     # Run tests once
+npm run test:coverage # Run with coverage report
 
-# Validação Completa
-npm run validate     # Executa lint + verificação de formatação + testes
+# All Checks
+npm run validate     # Run lint + format check + tests
 ```
 
-## Como Usar
+## Getting Started
 
-1. **Instalar dependências:**
+1. **Install dependencies:**
 
 ```bash
 npm install
 ```
 
-2. **Iniciar servidor de desenvolvimento:**
+1. **Start development server:**
 
 ```bash
 npm run dev
 ```
 
-3. **Acessar** [http://localhost:5173](http://localhost:5173)
+1. **Open** [http://localhost:5173](http://localhost:5173)
 
-## Path Aliases
+## Import Aliases
 
-O projeto utiliza path aliases para imports mais limpos:
+The project uses path aliases for cleaner imports:
 
 ```javascript
-// Em vez de:
+// Instead of:
 import Button from "../../../components/ui/Button";
 
 // Use:
 import { Button } from "@components";
-// ou
+// or
 import { Button } from "@components/ui";
 ```
 
-Aliases disponíveis:
+Available aliases:
 
 - `@/*` → `src/*`
 - `@components/*` → `src/components/*`
@@ -129,18 +129,18 @@ Aliases disponíveis:
 - `@constants/*` → `src/constants/*`
 - `@assets/*` → `src/assets/*`
 
-## Diretrizes de Componentes
+## Component Guidelines
 
-### Padrão Atomic Design
+### Atomic Design Pattern
 
-Os componentes são organizados seguindo princípios de atomic design:
+Components are organized following atomic design principles:
 
-- **UI (Atoms)**: Blocos básicos de construção (Button, Badge, Icon, Spinner)
-- **Layout**: Componentes estruturais (Container, Section, Grid)
-- **Animation**: Wrappers de animação (FadeIn, AnimatedSection)
-- **Feature**: Componentes complexos combinando átomos (Carousel, Navbar)
+- **UI (Atoms)**: Basic building blocks (Button, Badge, Icon, Spinner)
+- **Layout**: Structural components (Container, Section, Grid)
+- **Animation**: Motion wrappers (FadeIn, AnimatedSection)
+- **Feature**: Complex components combining atoms (Carousel, Navbar)
 
-### Criando Novos Componentes
+### Creating New Components
 
 ```jsx
 // src/components/ui/MyComponent.jsx
@@ -167,41 +167,44 @@ const MyComponent = ({
 export default MyComponent;
 ```
 
-## Testes
+## Testing
 
-Os testes estão localizados em `src/test/` e seguem o padrão `*.test.{js,jsx}`.
+Tests are located in `src/test/` and follow the pattern `*.test.{js,jsx}`.
 
 ```bash
-# Executar todos os testes
+# Run all tests
 npm run test
 
-# Executar com interface
+# Run with UI
 npm run test:ui
 
-# Executar com cobertura
+# Run with coverage
 npm run test:coverage
 ```
 
-## Sobre o Projeto
+## Changelog
 
-Portfólio pessoal desenvolvido por **Yuri Machado Luz** para apresentar projetos e habilidades técnicas.
+### v0.6.0
 
-### Recursos Implementados
+- ✨ Complete architecture refactor with best practices
+- 📁 New folder structure with barrel exports
+- 🧱 Atomic Design component library (Button, Card, Badge, Icon, Spinner)
+- 🎣 Custom hooks (useDebounce, useLocalStorage, useMediaQuery, etc.)
+- 🛠️ Utility functions (cn, validation, date formatting, timing)
+- 📋 Centralized constants (animations, theme, routes, breakpoints)
+- 🧪 Testing setup with Vitest + React Testing Library
+- 🔧 Improved ESLint with a11y and React rules
+- 💅 EditorConfig + Prettier configuration
+- 🚀 GitHub Actions CI workflow
+- 📝 Path aliases for cleaner imports
 
-- Refatoração completa de arquitetura com melhores práticas
-- Estrutura de pastas organizada com barrel exports
-- Biblioteca de componentes seguindo Atomic Design
-- Hooks customizados (useDebounce, useLocalStorage, useMediaQuery, etc.)
-- Funções utilitárias (cn, validação, formatação de datas, timing)
-- Constantes centralizadas (animações, tema, rotas, breakpoints)
-- Setup de testes com Vitest + React Testing Library
-- ESLint configurado com regras de a11y e React
-- EditorConfig + Prettier
-- Workflow de CI com GitHub Actions
-- Path aliases para imports limpos
+### v0.5.0-alpha
 
----
+- Complete project overhaul
+- Migration to React + Vite
+- Added Tailwind CSS
+- Modern architecture implementation
 
-**© 2026 Yuri Machado Luz. Todos os direitos reservados.**
+## License
 
-Este é um projeto pessoal e não está disponível para uso, modificação ou distribuição sem permissão expressa do autor.
+MIT
