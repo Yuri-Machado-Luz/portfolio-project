@@ -21,13 +21,13 @@ const Projects = () => {
       type: "frontend",
     },
     {
-      title: "Automação de Onboarding IBM",
+      title: "Design System & Component Library",
       description:
-        "Sistema de automação end-to-end para processos de onboarding e integração de colaboradores. Reduziu o tempo de integração de 7 para 3 dias (-57%), processando 1.200+ casos mensais com scripts Python integrados ao Microsoft 365 Cloud.",
-      technologies: ["Python", "Microsoft 365", "Power Automate", "ETL"],
-      github: null,
-      demo: null,
-      type: "enterprise",
+        "Biblioteca de componentes React reutilizáveis com Atomic Design, acessibilidade WCAG 2.1, e documentação Storybook. Base para projetos frontend escaláveis e consistentes.",
+      technologies: ["React", "Tailwind CSS", "Storybook", "Framer Motion"],
+      github: "Em breve",
+      demo: "Em Desenvolvimento",
+      type: "frontend",
     },
     {
       title: "Dashboard Analytics SaaS",
@@ -39,6 +39,15 @@ const Projects = () => {
       type: "fullstack",
     },
     {
+      title: "Automação de Onboarding IBM",
+      description:
+        "Sistema de automação end-to-end para processos de onboarding e integração de colaboradores. Reduziu o tempo de integração de 7 para 3 dias (-57%), processando 1.200+ casos mensais com scripts Python integrados ao Microsoft 365 Cloud.",
+      technologies: ["Python", "Microsoft 365", "Power Automate", "ETL"],
+      github: null,
+      demo: null,
+      type: "enterprise",
+    },
+    {
       title: "Pipeline de Dados & APIs",
       description:
         "Sistema de ETL e integração de APIs para sincronização de dados entre plataformas CRM, marketing e analytics. Processamento automatizado com Pandas, conectando 5+ plataformas externas.",
@@ -46,15 +55,6 @@ const Projects = () => {
       github: null,
       demo: null,
       type: "backend",
-    },
-    {
-      title: "Design System & Component Library",
-      description:
-        "Biblioteca de componentes React reutilizáveis com Atomic Design, acessibilidade WCAG 2.1, e documentação Storybook. Base para projetos frontend escaláveis e consistentes.",
-      technologies: ["React", "Tailwind CSS", "Storybook", "Framer Motion"],
-      github: "Em breve",
-      demo: "Em Desenvolvimento",
-      type: "frontend",
     },
     {
       title: "Sistema de Triagem Automatizada",
