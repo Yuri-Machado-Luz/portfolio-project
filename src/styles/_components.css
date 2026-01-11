@@ -1,0 +1,62 @@
+.animatedBadge {
+  will-change: transform, box-shadow, opacity;
+  backface-visibility: hidden;
+  transform-origin: center center;
+  animation: badgeAnimate 4s infinite alternate-reverse
+    cubic-bezier(0, 0.19, 0.99, 0.02);
+}
+
+@keyframes badgeAnimate {
+  0% {
+    transform: scale(0.98);
+    box-shadow: 0 0 0 0 rgba(255, 25, 113, 0);
+    box-shadow: 0 0 7px 2px rgba(247, 2, 96, 0.444);
+  }
+
+  100% {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px 5px rgba(247, 2, 96, 0.644);
+  }
+}
+
+/* Glass morphism cards */
+.glass-card {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(26, 26, 26, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card:hover {
+  background: rgba(26, 26, 26, 0.75);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Glow effects */
+.glow-pri {
+  box-shadow: 0 0 20px 5px rgba(255, 0, 64, 0.2);
+}
+
+.glow-sec {
+  box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.2);
+}
+
+/* Text glow */
+.text-glow-pri {
+  text-shadow: 0 0 10px rgba(255, 0, 64, 0.5);
+}
+
+.text-glow-sec {
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Smooth transitions */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Select dropdown fix for dark theme */
+select option {
+  background-color: #1a1a1a;
+  color: #f2f4f3;
+}
